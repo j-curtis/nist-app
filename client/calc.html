@@ -1,0 +1,123 @@
+<head>
+  <title>calc</title>
+  <link href='http://fonts.googleapis.com/css?family=Exo:100,400' rel='stylesheet' type='text/css'>
+  
+  <!--  If we need to test with some libs, that'd be easy
+  <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js"></script> 
+   <script src="//ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script> 
+   <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script> 
+   <script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script> 
+   <script src="//ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script> 
+   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+ -->
+  
+</head>
+
+<body>
+
+  {{> layout}}
+</body>
+
+
+<template name="layout">
+  <br>
+  <div class="container">
+  {{> form}}
+  </div>
+  
+  <div id="foot"  >
+    {{>infos}}
+   </div>
+   
+<a href="https://github.com/iplanwebsites/expression-calculator" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+</template>
+
+
+
+<template name="form">
+  
+  <form>
+      <input id="target" class="form-control input-lg" type="text" placeholder="(2/3) + 5"   spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off"  />
+      <button id="clear" type="button" class="close" aria-hidden="true">&times;</button>
+      
+      <div id="equal" >
+        
+        
+      </div>  
+      
+      <div id="response">
+        <span class="res"></span>
+        
+        <span id="lastWorking" class=" ">
+          <button id="revert" class="btn btn-xs btn-default">
+            <i class="glyphicon glyphicon-repeat"></i>
+            <span></span> </button> &nbsp; 
+        </span>
+        
+      </div>
+      
+  </form>
+  
+ 
+</template>
+
+
+<template name="infos">
+  
+  <div class="container"> 
+    <div class="row">
+      
+      <div class="col-md-5">
+        <h2>
+          Script.io
+          <small style="font-size:13px; color:#aaa;">by <a href="http://twitter.com/felix_m"  style=" color:#999;">felix_m</a></small>
+       </h2> 
+        <p class="lead">A powerful calculator and javscript console.</p>
+        {{>settings}}
+      
+      </div>
+      
+      <div class="col-md-1">  
+      </div>
+      
+      <div class="col-md-6 ">
+        <img class="pull-left" style="height:110px; margin-right:20px;" src="http://cdn1.iconfinder.com/data/icons/metro-uinvert-dock/256/Keyboard.png" />
+        <h4>Just type in a <em>Math</em> or <em>Javascript</em> expression. </h4>
+        
+        <button class="btn btn-xs btn-default example">(40*22*52)/12</button>
+        <button class="btn btn-xs btn-default example">Math.sin( Math.random()*180 )</button>
+        <button class="btn btn-xs btn-default example">new Date().getTime()</button>
+        <button class="btn btn-xs btn-default example">new Array == false</button>
+        <button class="btn btn-xs btn-default example">"Never odd or even".split("").reverse().join("")</button>
+        <button class="btn btn-xs btn-default example">document.width > 1200</button>
+        
+      </div>
+      
+      <div class="col-md-4 hidden">
+        <h2>Script.io</h2>
+        <p class="lead">A powerful calculator and javscript console.</p>
+      </div>
+      
+    </div>
+  </div> 
+  
+   
+
+</template>
+
+
+<template name="settings"> 
+ <div class="checkbox">
+      <label> 
+        <input type="checkbox" id="formatNumbers" checked="checked"> Format numbers 
+      </label>
+    </div> 
+    
+    <div class="checkbox">
+         <label> 
+           <input type="checkbox" id="roundNumbers"  checked="checked"> Round numbers <small style="opacity:0.5;">(2 decimals)</small>
+         </label>
+       </div>
+ </template>      
