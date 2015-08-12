@@ -13,7 +13,7 @@ Contest rules are [here](http://nistdata.devpost.com/rules).
 Note that, because this repository is designed to fulfill the purposes of a competition, there is no open-source license. This is to maintain some semblance of propriety on the work, at least until the conclusion of the submission period for the contest. 
 
 ## Design
-The design of the app will be roughly modelled on a scientific calculator with natural inclusion of NIST data constants (as well as other user defined constants). The calculator portion will be modelled after the Google experimental calculator app Ivy, with source code located in [this](https://github.com/robpike/ivy) Github repository. The Ivy calculator is written in the Go language and is designed for use on Android systems. More documentation is available in the Ivy repository and full documentation is located [here](http://godoc.org/robpike.io/ivy).
+The design of the app will be roughly modelled on a scientific calculator with natural inclusion of NIST data constants (as well as other user defined constants). The calculator portion will be modelled after the Google experimental calculator app Ivy, with source code located in this Github [repository](https://github.com/robpike/ivy). The Ivy calculator is written in the Go language and is designed for use on Android systems. More documentation is available in the Ivy repository and full documentation is located [here](http://godoc.org/robpike.io/ivy).
 
 
 
