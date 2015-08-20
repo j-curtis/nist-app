@@ -4,6 +4,8 @@ todos
 ## High Priority
 Incorporate constants/dataset
 Add units handling
+	math.js?	
+
 Redesign interface to show/use previous results
 load presets from a gist (from github)
 write presets for user session to gist
