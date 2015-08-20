@@ -27,6 +27,6 @@ submission period for the contest.
 ## Design
 The design of the app will be roughly modelled on a scientific calculator with
 natural inclusion of NIST data constants (as well as other user defined
-constants). 
+constants).
 
 Initially forked from this [repo](https://github.com/iplanwebsites/expression-calculator).
